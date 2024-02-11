@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookblitz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bookblitz</h1>
+    </div>
+
+    <div class="maincontnet">
+        <center> <h1 style="color: whitesmoke;"><span style='font-size:50px;'>&#128640;</span>Unleash Your Inner Bookworm: Dive into the <span class="heading">Bookblitz</span> Adventure!</h1></center>
+        <center><p style="color: whitesmoke;"> "Get ready to be swept away in a literary whirlwind at BookBlitz - where every page ignites a passion for storytelling! <span style='font-size:30px;'>&#128173;</span>"</p></center>                                                                                                                                                                                                               
+    </div>
+    
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert T. Kiyosaki</h5>
+            <p>
+                "Rich Dad Poor Dad" is a transformative financial guide by Robert T. Kiyosaki, contrasting the financial mindsets of two fathers. Through engaging anecdotes, Kiyosaki imparts timeless lessons on money management, investing, and mindset shifts, empowering readers to break free from traditional financial constraints and build lasting wealth through strategic thinking and action.
+            </p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+         
+    </div>
+    
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h1>ADD Book</h1>
+        <form action="bookcontent">
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input" ></textarea>
+            <button id="add-book" >ADD</button>
+            <button id="cancel-popup" >CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
